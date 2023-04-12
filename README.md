@@ -36,15 +36,15 @@ My goal was to develop a functional toolset, employing novel methods of developm
 
 My implementation centers around the Level Sequencer tool built into the engine. This tool is an NLE (None-Linear Editor) like Premier Pro from Adobe, but with the ability to call scripted functions specified in Blueprints. As this tool is analagous to tradional NLE's used in cinema to tell stories, it was the obvious first choice to extend the editor with. Using this tool the designer can more visually compose 3D scenes or 2D scenes using built in cameras, cuts and scriptable actors. This tool is already used in this way to create in game cut scenes.
 
-![The Level Sequence Tool](media\VNTK_EditorComposition.png)
+![The Level Sequence Tool](media/VNTK_EditorComposition.png)
 
 I attempted to expand the capabilities of the level sequencer by modifying the DirectorBP that exists behind any sequence made using the Level Sequencer tool. When you add a triggerable event to a sequence, its corresponding event node is created in the DirectorBP. These events are connected to custom functions for pausing and resuming the sequence, displaying text boxes and choices, and triggering which sequence to open at the end of the current one. 
 
-![The DirectorBP behind every sequence asset](media\VNTK_DirectorBP.png)
+![The DirectorBP behind every sequence asset](media/VNTK_DirectorBP.png)
 
 The designer composing the scene only needs to add breakpoints to the relevant tracks and pass through the required information. The DirectorBP passes that to the relevant actors to control them. Adding to the breakpoint track triggers an instruction to pause the sequence. Typically to display a diaglogue box or a choice. Adding a breakpoint to the Dialogue or Choices tracks trigger text to appear onscreen in the form of dialogue or a clickable choice respectively.
 
-![The breakpoints on the sequence tracks](media\VNTK_Track_Breakpoints.png)
-![The breakpoints for triggering the dialogue and choices](media\VNTK_Track_DialoguesAndChoices.png)
+![The breakpoints on the sequence tracks](media/VNTK_Track_Breakpoints.png)
+![The breakpoints for triggering the dialogue and choices](media/VNTK_Track_DialoguesAndChoices.png)
 
 When adding items to the tracks, the designer can pass through data. This could be in the form of a line of dialogue and the character asset that is speaking. Or it can pass through a list of choices and their linked action. When a choice is clicked it can trigger the linked action. In the demonstration, this is in the form of opening a new sequence based on what the player selected. 
