@@ -4,8 +4,7 @@ For my Masters project at university I interested in tools development for unrea
 
 I came upon the idea of prototyping a toolkit for assisiting development of scripted dialogue scenes in games. More specifically, replicating some of the functionality used in the creation of visual novel games.
 
-You can watch the presentation here or read below for a comprehensive breakdown of the project.
-<iframe src="https://onedrive.live.com/embed?cid=3244DF4F4684711B&resid=3244DF4F4684711B%2156469&authkey=AEusOIz0NUngYlo&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe>
+You can watch the presentation [here](https://onedrive.live.com/embed?cid=3244DF4F4684711B&resid=3244DF4F4684711B%2156469&authkey=AEusOIz0NUngYlo&em=2) or read below for a comprehensive breakdown of the project.
 
 ## Research
 
